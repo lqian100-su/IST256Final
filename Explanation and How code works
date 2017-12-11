@@ -1,0 +1,64 @@
+Explanation of Project 22- Travel Buddy
+
+Group Members and Contributions
+Liuqi Qian - code for the description of the countries, overall organization of codes. Video and poster
+Eden Tafesse - code for getting the weather for the cities, code for currency exchange(function). Video, major contributor of poster.
+Jiaqiao Wang - code for the currency exchange(dictionary), top restaurants in the city and the time zones. Video and poster.
+
+
+How the code works:
+Inputs:
+City 
+Country
+Outputs:
+Country
+Description of the country (location, population, capital city, language and currency)
+Optional: Currency exchange, the amount in local currency.
+City
+Top 3 restaurants in that area (Type of restaurants, Name of restaurants, Ratings, Average cost for two people)
+Time Zone and exact time of the city
+Temperature of the city
+Algorithm:
+Create list of currency types.
+Create list of exchange rate from USD to other currency.
+Create a dictionary based on the lists.
+Create function using the dictionary to do currency exchange.
+Import all the necessary protocols and tools
+Get and decode the API for description of Countries
+Create list of data frames based on the variables in the decoded json file.
+Create user input for country 
+If input in the list
+Print the desired output for country
+Else
+	Print error message.
+Create user input currency(if the user wants currency exchange Y/N)
+Try
+If ‘Y’
+	Create user input amount of money for conversion. 
+Print the amount in desired currency using the function
+If ‘N’
+Quit
+Except
+	Print error message
+
+Print heading of second part “Now the cities”
+Get the url and create a local file using urllib
+Modify the file so that it can find time-zones based on city inputs
+Create dictionary of cities and time zones based on the file
+Define formats of output
+Create user input-city
+Print output time zones and exact time using the dictionary we created and pytz in the format we defined
+
+Use requests and json to get the city ID of inputted city in the zomato API
+Use city ID and the zomato restaurant finder API to get the response of best restaurants in the area of inputted city.
+Print desired output by calling specific keys in the dictionary 
+
+Get and decode API for temperature lookup
+If request is successful
+	Print the temperature of the inputted city 
+Else
+	Print error message
+
+
+
+
