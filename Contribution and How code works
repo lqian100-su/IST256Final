@@ -1,9 +1,11 @@
 Explanation of Project 22- Travel Buddy
 
 Group Members and Contributions
-Liuqi Qian - code for the description of the countries, overall organization of codes. Video and poster
+Liuqi Qian - code for the description of the countries, overall organization of codes. Video and poster. Program handler for demo.
 Eden Tafesse - code for getting the weather for the cities, code for currency exchange(function). Video, major contributor of poster.
-Jiaqiao Wang - code for the currency exchange(dictionary), top restaurants in the city and the time zones. Video and poster.
+Recorder of demo.
+Jiaqiao Wang - code for the currency exchange(dictionary), top restaurants in the city and the time zones. Video and poster. Spokesperson
+for demo.
 
 
 How the code works:
@@ -28,7 +30,7 @@ Get and decode the API for description of Countries
 Create list of data frames based on the variables in the decoded json file.
 Create user input for country 
 If input in the list
-Print the desired output for country
+	Print the desired output for country
 Else
 	Print error message.
 Create user input currency(if the user wants currency exchange Y/N)
@@ -37,7 +39,7 @@ If ‘Y’
 	Create user input amount of money for conversion. 
 Print the amount in desired currency using the function
 If ‘N’
-Quit
+	Quit
 Except
 	Print error message
 
